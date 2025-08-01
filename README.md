@@ -30,3 +30,50 @@ app/
 └── main.py             # Punto de entrada principal 
 ```
 
+~ Autenticación
+Algunas rutas estan protegidas por credenciales así que para tener acceso deberás:
+
+1. Crear un archivo .env
+2. Configurar las variables USERNAME="usuario" y PASSWORD="contraseña"
+
+~ Instalación
+
+1. Clonar el repositorio
+```bash
+git clone https://github.com/tu-usuario/nombre-repo.git
+cd nombre-repo
+```
+2. Crear y activar el entorno virtual
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+```
+
+3. Instalar las dependencias
+```bash
+pip install -r requirements.txt
+```
+
+4. Arrancar FastAPI
+```bash
+fastapi dev app/main.py
+```
+
+~ Enpoints Principales
+
+- GET /users → Lista de usuarios (con filtro ?is_active=true)
+
+- POST /users → Crear usuario
+
+- GET /books → Lista de libros (con filtro ?category=Fantasy)
+
+- POST /books → Crear libro (requiere autenticación)
+
+- POST /user/{user_id}/books/{book_id} → Asignar libro a usuario (requiere autenticación)
+
+- DELETE /books/{book_id} → Eliminar libro (requiere autenticación)
+
+~ Testing
+
+Puedes testear los endpoints desde: http://localhost:8000/docs
