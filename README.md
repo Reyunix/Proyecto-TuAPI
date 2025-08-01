@@ -1,5 +1,5 @@
 # 📚 FastAPI Library Management API
-Una API REST construida con FastAPI/Swagger y Sqlite para gestionar usuarios, libros y relaciones entre ellos. Incluye autenticación básica, filtrado de resultados y una arquitectura organizada por controladores, modelos, repositorios y esquemas.
+Una API REST construida con **FastAPI/Swagger** y **Sqlite** para gestionar usuarios, libros y relaciones entre ellos. Incluye autenticación básica, filtrado de resultados y una arquitectura organizada por controladores, modelos, repositorios y esquemas.
 
 ### ~ Características
 CRUD completo para usuarios y libros
@@ -33,8 +33,8 @@ app/
 ### ~ Autenticación
 Algunas rutas estan protegidas por credenciales así que para tener acceso deberás:
 
-1. Crear un archivo .env
-2. Configurar las variables USERNAME="usuario" y PASSWORD="contraseña"
+1. Crear un **archivo .env**
+2. Configurar las variables **USERNAME="usuario"** y **PASSWORD="contraseña"**
 
 ### ~ Instalación
 
