@@ -1,4 +1,4 @@
-📚 FastAPI Library Management API
+📚 FastAPI Library Management API\n
 Una API REST construida con FastAPI/Swagger y Sqlite para gestionar usuarios, libros y relaciones entre ellos. Incluye autenticación básica, filtrado de resultados y una arquitectura organizada por controladores, modelos, repositorios y esquemas.
 
 ~ Características
