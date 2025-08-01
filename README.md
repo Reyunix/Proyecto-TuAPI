@@ -40,8 +40,8 @@ Algunas rutas estan protegidas por credenciales así que para tener acceso deber
 
 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tu-usuario/nombre-repo.git
-cd nombre-repo
+git clone https://github.com/Reyunix/Proyecto-TuAPI.git
+cd Proyecto-TuAPI
 ```
 2. Crear y activar el entorno virtual
 ```bash
@@ -74,6 +74,6 @@ fastapi dev app/main.py
 
 - DELETE /books/{book_id} → Eliminar libro (requiere autenticación)
 
-~ Testing
+### ~ Testing
 
 Puedes testear los endpoints desde: http://localhost:8000/docs
