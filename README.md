@@ -1,7 +1,7 @@
-📚 FastAPI Library Management API\n
+# 📚 FastAPI Library Management API
 Una API REST construida con FastAPI/Swagger y Sqlite para gestionar usuarios, libros y relaciones entre ellos. Incluye autenticación básica, filtrado de resultados y una arquitectura organizada por controladores, modelos, repositorios y esquemas.
 
-~ Características
+### ~ Características
 CRUD completo para usuarios y libros
 
 - Relación muchos-a-muchos entre usuarios y libros
@@ -15,7 +15,7 @@ CRUD completo para usuarios y libros
 - Separación clara de responsabilidades (repositorios, controladores, routers, etc.)
 
 
-~ Estructura del proyecto
+### ~ Estructura del proyecto
 
 ```bash 
 app/
@@ -30,13 +30,13 @@ app/
 └── main.py             # Punto de entrada principal 
 ```
 
-~ Autenticación
+### ~ Autenticación
 Algunas rutas estan protegidas por credenciales así que para tener acceso deberás:
 
 1. Crear un archivo .env
 2. Configurar las variables USERNAME="usuario" y PASSWORD="contraseña"
 
-~ Instalación
+### ~ Instalación
 
 1. Clonar el repositorio
 ```bash
@@ -60,7 +60,7 @@ pip install -r requirements.txt
 fastapi dev app/main.py
 ```
 
-~ Enpoints Principales
+### ~ Enpoints Principales
 
 - GET /users → Lista de usuarios (con filtro ?is_active=true)
 
